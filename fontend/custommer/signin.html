@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link href="images/favicon.png" rel="shortcut icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <!--====== font-awesome ======-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+
+<body>
+    <div id="app">
+        <!--====== Main Header ======-->
+        <header class="header--style-1 header--box-shadow">
+            <!--====== Nav 1 ======-->
+            <nav class="primary-nav primary-nav-wrapper--border">
+                <div class="container">
+                    <div class="primary-nav">
+                        <a class="main-logo" href="index.html">
+                            <img src="images/logo/logo-3.jpg" alt=""></a>
+
+                        <!--====== Search Form ======-->
+                        <form class="main-form">
+                            <input class="input-text input-text--border-radius input-text--style-1" type="text"
+                                id="main-search" placeholder="Tìm kiếm món ăn">
+                            <button class="btn btn--icon main-search-button" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                        <!--====== End - Search Form ======-->
+
+                        <div class="" id="navigation">
+                            <!--====== List ======-->
+                            <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                                <li class="has-dropdown" data-tooltip="tooltip" data-placement="left">
+                                    <a><i class="fa-regular fa-circle-user"></i></a>
+                                    <ul class="sub-menu" style="width:120px">
+                                        <li>
+                                            <a href="dash-profile.html"><i class="fa-solid fa-circle-user m-r-6"></i>
+                                                <span>Tài khoản</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="signup.html"><i class="fa-solid fa-user-plus m-r-6"></i>
+                                                <span>Đăng kí</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="signin.html"><i class="fa-solid fa-lock m-r-6"></i>
+                                                <span>Đăng nhập</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html"><i class="fa-solid fa-lock-open m-r-6"></i>
+                                                <span>Đăng xuất</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li data-tooltip="tooltip" data-placement="left">
+                                    <a href="tel:+0900901904"><i class="fa-solid fa-phone-volume"></i></a>
+                                </li>
+                                <li data-tooltip="tooltip" data-placement="left">
+                                    <a href="mailto:contact@domain.com"><i class="far fa-envelope"></i></a>
+                                </li>
+                            </ul>
+                            <!--====== End - List ======-->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--====== End - Nav 1 ======-->
+
+            <!--====== Nav 2 ======-->
+            <nav class="secondary-nav-wrapper">
+                <div class="container">
+                    <div class="secondary-nav">
+                        <div style="width: 92px; height: 67px;"></div>
+                        <div class="" id="navigation2">
+                            <!--====== Menu ======-->
+                            <ul class="ah-list ah-list--design2 ah-list--link-color-secondary ">
+                                <li>
+                                    <a href="filter.html">THỰC ĐƠN</a>
+                                </li>
+                                <li>
+                                    <a href="filter.html">MÓN ĂN KÈM</a>
+                                </li>
+                                <li>
+                                    <a href="filter.html">NƯỚC GIẢI KHÁT</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html">BÀI VIẾT</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">LIÊN LẠC</a>
+                                </li>
+                            </ul>
+
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <div class="" id="navigation3">
+                            <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                                <li>
+                                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                                </li>
+                                <li>
+                                    <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--====== End - Nav 2 ======-->
+        </header>
+        <!--====== End - Main Header ======-->
+
+        <!--====== App Content ======-->
+        <div class="app-content">
+
+            <!-- <div class="u-s-p-b-60"> -->
+
+            <!--====== Section Intro ======-->
+            <div class="section__intro m-b-30 m-t-50">
+                <div class="container">
+                    <h1 class="section__heading ">ĐĂNG NHẬP</h1>
+                </div>
+            </div>
+            <!--====== End - Section Intro ======-->
+
+
+            <!--====== Section Content ======-->
+            <div class="section__content">
+                <div class="container">
+                    <div class="row row--center">
+                        <div class="col-lg-6 m-b-30">
+                            <div class="l-f-o">
+                                <div class="l-f-o__pad-box">
+                                    <h1 class="gl-h1">BẠN CHƯA CÓ TÀI KHOẢN ?</h1>
+                                    <div class="m-b-15">
+                                        <a class="l-f-o__create-link btn--e-transparent-brand-b-2"
+                                            href="signup.html">Đăng ký tài khoản</a>
+                                    </div>
+                                    <h1 class="gl-h1">ĐĂNG NHẬP</h1>
+
+                                    <span class="gl-text m-b-30">Nếu bạn đã có tài khoản, vui lòng đăng nhập.</span>
+                                    <form class="l-f-o__form">
+                                        <div class="gl-s-api">
+                                            <div class="m-b-15">
+
+                                                <a class="gl-s-api__btn gl-s-api__btn--fb" href=""><i
+                                                        class="fab fa-facebook-f"></i>
+
+                                                    <span>Đăng nhập với Facebook</span></a>
+                                            </div>
+                                            <div class="m-b-15">
+
+                                                <a class="gl-s-api__btn gl-s-api__btn--gplus" href=""><i
+                                                        class="fab fa-google"></i>
+
+                                                    <span>Đăng nhập với Google</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="m-b-30 m-t-30">
+
+                                            <label class="gl-label" for="login-email">TÊN ĐĂNG NHẬP <span class="required-check">*</span></label>
+
+                                            <input class="input-text input-text--primary-style" type="text"
+                                                id="login-email" placeholder="Nhập tên đăng nhập" required>
+                                        </div>
+                                        <div class="m-b-30">
+
+                                            <label class="gl-label" for="login-password">MẬT KHẨU <span class="required-check">*</span></label>
+
+                                            <input class="input-text input-text--primary-style" type="text"
+                                                id="login-password" placeholder="Nhập mật khẩu" required>
+                                        </div>
+                                        <div class="gl-inline">
+                                            <div class="m-b-30">
+                                                <button class="btn btn--e-transparent-brand-b-2"
+                                                    type="submit">ĐĂNG NHẬP</button>
+                                            </div>
+                                            <div class="m-b-30">
+                                                <a class="gl-link" href="lost-password.html">Quên mật khẩu?</a>
+                                            </div>
+                                        </div>
+                                        <div class="m-b-30">
+
+                                            <!--====== Check Box ======-->
+                                            <div class="check-box">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                      Nhớ mật khẩu
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!--====== End - Check Box ======-->
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====== End - Section Content ======-->
+            <!-- </div> -->
+            <!--====== End - Section 2 ======-->
+        </div>
+        <!--====== End - App Content ======-->
+
+        <!--====== Main Footer ======-->
+        <footer>
+            <div class="outer-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="outer-footer__content m-b-40">
+                                <span class="outer-footer__content-title">Liên hệ</span>
+                                <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
+                                    <span>261/17 Chu Văn An, Phường 12, Quận Bình Thạnh</span>
+                                </div>
+                                <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
+                                    <span>(+0) 900 901 904</span>
+                                </div>
+                                <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
+                                    <span>commenau@domain.com</span>
+                                </div>
+                                <div class="outer-footer__social">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="outer-footer__content m-b-40">
+                                        <span class="outer-footer__content-title">Về chúng tôi</span>
+                                        <div class="outer-footer__list-wrap">
+                                            <ul>
+                                                <li>
+                                                    <a href="cart.html">Giới thiệu chung</a>
+                                                </li>
+                                                <li>
+                                                    <a href="dashboard.html">Tầm nhìn - Sứ mệnh</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop-side-version-2.html">Tuyển dụng</a>
+                                                </li>
+                                                <li>
+                                                    <a href="dash-payment-option.html">Đối tác - Khách hàng</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="outer-footer__content m-b-40">
+                                        <div class="outer-footer__list-wrap">
+                                            <span class="outer-footer__content-title">Hỗ trợ</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="">Hỗ trợ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Phản hồi</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Liên hệ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="outer-footer__content">
+                                <span class="outer-footer__content-title">Tham gia bản tin của chúng tôi</span>
+                                <form class="newsletter">
+
+                                    <div class="newsletter__group">
+                                        <input class="input-text input-text--only-white" type="text" id="newsletter"
+                                            placeholder="Nhập email của bạn">
+                                        <button class="btn btn--e-brand newsletter__btn" type="submit">ĐĂNG KÝ</button>
+                                    </div>
+
+                                    <span class="newsletter__text">Đăng ký để nhận thông tin cập nhật về chương trình
+                                        khuyến
+                                        mãi, món mới, giảm giá và phiếu giảm giá.</span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--====== Google Font ======-->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/input.css">
+</head>
+
+<body>
+
+    <header class="header--style-1 header--box-shadow">
+        <!--====== Nav 1 ======-->
+        <nav class="primary-nav primary-nav-wrapper--border">
+            <div class="container">
+                <div class="primary-nav">
+                    <a class="main-logo" href="index.html">
+                        <img src="images/logo/logo-3.jpg" alt=""></a>
+
+                    <!--====== Search Form ======-->
+                    <form class="main-form">
+                        <input class="input-text input-text--border-radius input-text--style-1" type="text"
+                            id="main-search" placeholder="Tìm kiếm món ăn">
+                        <button class="btn btn--icon main-search-button" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <!--====== End - Search Form ======-->
+
+                    <div class="" id="navigation">
+                        <!--====== List ======-->
+                        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                            <li class="has-dropdown" data-tooltip="tooltip" data-placement="left">
+                                <a><i class="fa-regular fa-circle-user"></i></a>
+                                <ul class="sub-menu" style="width:120px">
+                                    <li>
+                                        <a href="dash-profile.html"><i class="fa-solid fa-circle-user m-r-6"></i>
+                                            <span>Tài khoản</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="signup.html"><i class="fa-solid fa-user-plus m-r-6"></i>
+                                            <span>Đăng kí</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="signin.html"><i class="fa-solid fa-lock m-r-6"></i>
+                                            <span>Đăng nhập</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html"><i class="fa-solid fa-lock-open m-r-6"></i>
+                                            <span>Đăng xuất</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li data-tooltip="tooltip" data-placement="left">
+                                <a href="tel:+0900901904"><i class="fa-solid fa-phone-volume"></i></a>
+                            </li>
+                            <li data-tooltip="tooltip" data-placement="left">
+                                <a href="mailto:contact@domain.com"><i class="far fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                        <!--====== End - List ======-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--====== End - Nav 1 ======-->
+
+        <!--====== Nav 2 ======-->
+        <nav class="secondary-nav-wrapper">
+            <div class="container">
+                <div class="secondary-nav">
+                    <div style="width: 92px; height: 67px;"></div>
+                    <div class="" id="navigation2">
+                        <!--====== Menu ======-->
+                        <ul class="ah-list ah-list--design2 ah-list--link-color-secondary ">
+                            <li>
+                                <a href="filter.html">THỰC ĐƠN</a>
+                            </li>
+                            <li>
+                                <a href="filter.html">MÓN ĂN KÈM</a>
+                            </li>
+                            <li>
+                                <a href="filter.html">NƯỚC GIẢI KHÁT</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">BÀI VIẾT</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">LIÊN LẠC</a>
+                            </li>
+                        </ul>
+
+                        <!--====== End - Menu ======-->
+                    </div>
+                    <div class="" id="navigation3">
+                        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                            <li>
+                                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                            </li>
+                            <li>
+                                <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--====== End - Nav 2 ======-->
+    </header>
+    <!--========= Main Content===========-->
+    <div class="container-content mt-5">
+        <div class="checkout-f d-flex flex-row">
+            <div class="col-6 me-5">
+                <h1 class="checkout-f__h1">THÔNG TIN VẬN CHUYỂN</h1>
+                <form class="checkout-f__delivery">
+                    <div class="flex-fill">
+                        <div class="u-s-m-b-15">
+
+                            <!--====== Check Box ======-->
+                            <div class="check-box d-flex flex-row">
+
+                                <input type="checkbox" id="get-address">
+                                <div class="check-box__state check-box__state--primary">
+
+                                    <label class="check-box__label" for="get-address">Sử dụng địa chỉ giao hàng mặc định
+                                        của tài khoản của bạn</label>
+                                </div>
+                            </div>
+                            <!--====== End - Check Box ======-->
+                        </div>
+
+                        <!--====== First Name, Last Name ======-->
+                        <div class="d-flex flex-row">
+                            <div class="u-s-m-b-15 col-6">
+
+                                <label class="gl-label" for="billing-fname">TÊN *</label>
+
+                                <input class="input-text input-text--primary-style " type="text" id="billing-fname"
+                                    data-bill="">
+                            </div>
+                            <div class="u-s-m-b-15 col-6">
+
+                                <label class="gl-label" for="billing-lname">HỌ *</label>
+
+                                <input class="input-text input-text--primary-style" type="text" id="billing-lname"
+                                    data-bill="">
+                            </div>
+                        </div>
+                        <!--====== End - First Name, Last Name ======-->
+
+
+                        <!--====== E-MAIL ======-->
+                        <div class="u-s-m-b-15">
+
+                            <label class="gl-label" for="billing-email">E-MAIL *</label>
+
+                            <input class="input-text input-text--primary-style" type="text" id="billing-email"
+                                data-bill="">
+                        </div>
+                        <!--====== End - E-MAIL ======-->
+
+
+                        <!--====== PHONE ======-->
+                        <div class="u-s-m-b-15">
+
+                            <label class="gl-label" for="billing-phone">SĐT *</label>
+
+                            <input class="input-text input-text--primary-style" type="text" id="billing-phone"
+                                data-bill="">
+                        </div>
+                        <!--====== End - PHONE ======-->
+
+
+                        <!--====== Street Address ======-->
+                        <div class="u-s-m-b-15">
+
+                            <label class="gl-label" for="billing-street">ĐỊA CHỈ *</label>
+
+                            <input class="input-text input-text--primary-style" type="text" id="billing-street"
+                                placeholder="House name and street name" data-bill="">
+                        </div>
+
+                        <!--====== End - Street Address ======-->
+
+
+                        <div class="u-s-m-b-10">
+                            <label class="gl-label" for="order-note">GHI CHÚ CHO ĐƠN HÀNG</label><textarea
+                                class="text-area text-area--primary-style" id="order-note"></textarea>
+                        </div>
+                        <div>
+
+                            <button class="btn btn--e-transparent-brand-b-2" type="submit">LƯU</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <h1 class="checkout-f__h1">SƠ LƯỢC ĐƠN HÀNG</h1>
+
+                <!--====== Order Summary ======-->
+                <div class="o-summary">
+                    <div class="o-summary__section u-s-m-b-30">
+                        <div class="o-summary__item-wrap gl-scroll">
+                            <div class="o-card">
+                                <div class="o-card__flex">
+                                    <div class="o-card__img-wrap">
+
+                                        <img class="u-img-fluid" src="images/slider/food-1167397_1280.jpg" alt="">
+                                    </div>
+                                    <div class="o-card__info-wrap">
+
+                                        <span class="o-card__name">
+
+                                            <a href="product-detail.html">Cơm Kim Chi Sốt Gà</a></span>
+
+                                        <span class="o-card__quantity">Số lượng x 1</span>
+
+                                        <span class="o-card__price">25.000 VNĐ</span>
+                                    </div>
+                                </div>
+
+                                <a class="o-card__del far fa-trash-alt"></a>
+                            </div>
+                            <div class="o-card">
+                                <div class="o-card__flex">
+                                    <div class="o-card__img-wrap">
+
+                                        <img class="u-img-fluid" src="images/slider/kimchi-fried-rice-241051_1280.jpg" alt="">
+                                    </div>
+                                    <div class="o-card__info-wrap">
+
+                                        <span class="o-card__name">
+
+                                            <a href="product-detail.html">Cơm Kim Chi Sốt Gà</a></span>
+
+                                        <span class="o-card__quantity">Số lượng x 1</span>
+
+                                        <span class="o-card__price">25.000 VNĐ</span>
+                                    </div>
+                                </div>
+
+                                <a class="o-card__del far fa-trash-alt"></a>
+                            </div>
+                            <div class="o-card">
+                                <div class="o-card__flex">
+                                    <div class="o-card__img-wrap">
+
+                                        <img class="u-img-fluid" src="images/slider/food-1485024_1280.jpg" alt="">
+                                    </div>
+                                    <div class="o-card__info-wrap">
+
+                                        <span class="o-card__name">
+
+                                            <a href="product-detail.html">Cơm Kim Chi Sốt Gà</a></span>
+
+                                        <span class="o-card__quantity">Số lượng x 1</span>
+
+                                        <span class="o-card__price">25.000 VNĐ</span>
+                                    </div>
+                                </div>
+
+                                <a class="o-card__del far fa-trash-alt"></a>
+                            </div>
+                            <div class="o-card">
+                                <div class="o-card__flex">
+                                    <div class="o-card__img-wrap">
+
+                                        <img class="u-img-fluid" src="images/slider/salad-1206018_1280.jpg" alt="">
+                                    </div>
+                                    <div class="o-card__info-wrap">
+
+                                        <span class="o-card__name">
+
+                                            <a href="product-detail.html">Cơm Kim Chi</a></span>
+
+                                        <span class="o-card__quantity">Số lượng x 1</span>
+
+                                        <span class="o-card__price">25.000 VNĐ</span>
+                                    </div>
+                                </div>
+
+                                <a class="o-card__del far fa-trash-alt"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="o-summary__section u-s-m-b-30">
+                        <div class="o-summary__box">
+                            <table class="o-summary__table">
+                                <tbody>
+                                    <tr>
+                                        <td>PHÍ VẬN CHUYỂN</td>
+                                        <td>2.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>THUẾ</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CHI PHÍ CỦA SẢN PHẨM</td>
+                                        <td>25.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TỔNG ĐƠN HÀNG</td>
+                                        <td>27.000 VNĐ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="o-summary__section u-s-m-b-30">
+                        <div class="o-summary__box">
+                            <h1 class="checkout-f__h1">THÔNG TIN THANH TOÁN</h1>
+                            <form class="checkout-f__payment">
+                                <div class="u-s-m-b-10 d-flex flex-column">
+
+                                    <!--====== Radio Box ======-->
+                                    <div class="radio-box">
+
+                                        <input type="radio" id="cash-on-delivery" name="payment">
+                                        <div class="radio-box__state radio-box__state--primary">
+
+                                            <label class="radio-box__label" for="cash-on-delivery">THANH TOÁN BẰNG TIỀN
+                                                MẶT</label>
+                                        </div>
+                                    </div>
+                                    <!--====== End - Radio Box ======-->
+                                    
+                                    <span class="gl-text u-s-m-t-6">Thanh toán bằng tiền mặt khi nhận hàng. (dịch vụ này
+                                        chỉ áp dụng cho mặt số tỉnh thành)</span>
+                                </div>
+                                <div class="u-s-m-b-10 d-flex flex-column">
+
+                                    <!--====== Radio Box ======-->
+                                    <div class="radio-box">
+                                        <input type="radio" id="direct-bank-transfer" name="payment">
+                                        <div class="radio-box__state radio-box__state--primary">
+                                            <label class="radio-box__label" for="direct-bank-transfer">Chuyển khoản ngân hàng trực tiếp</label>
+                                        </div>
+                                    </div>
+                                    <!--====== End - Radio Box ======-->
+
+                                    <span class="gl-text u-s-m-t-6">Chuyển khoản trực tiếp thông qua tài khoản ngân hàng của bạn. Làm ơn sử dụng OrderID như mã thanh toán. Đơn hàng của bạn sẽ không được vận chuyển cho đến khi chúng tôi đã xác nhận thanh toán thành công.</span>
+                                </div>
+                                <div class="u-s-m-b-15">
+                                    <!--====== Check Box ======-->
+                                    <div class="check-box">
+                                        <input type="checkbox" id="term-and-condition">
+                                        <div class="check-box__state check-box__state--primary">
+                                            <label class="check-box__label" for="term-and-condition">Tôi đồng ý với</label>
+                                        </div>
+                                    </div>
+                                    <!--====== End - Check Box ======-->
+
+                                    <a class="gl-link">Các điều khoản của dịch vụ.</a>
+                                </div>
+                                <div>
+
+                                    <button class="btn btn--e-brand-b-2" type="submit">PLACE ORDER</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--====== End - Order Summary ======-->
+            </div>
+
+        </div>
+    </div>
+    <!--=========== End Main Content==========-->
+    <footer>
+        <div class="outer-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="outer-footer__content m-b-40">
+                            <span class="outer-footer__content-title">Liên hệ</span>
+                            <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
+                                <span>261/17 Chu Văn An, Phường 12, Quận Bình Thạnh</span>
+                            </div>
+                            <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
+                                <span>(+0) 900 901 904</span>
+                            </div>
+                            <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
+                                <span>commenau@domain.com</span>
+                            </div>
+                            <div class="outer-footer__social">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="outer-footer__content m-b-40">
+                                    <span class="outer-footer__content-title">Về chúng tôi</span>
+                                    <div class="outer-footer__list-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="cart.html">Giới thiệu chung</a>
+                                            </li>
+                                            <li>
+                                                <a href="dashboard.html">Tầm nhìn - Sứ mệnh</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-side-version-2.html">Tuyển dụng</a>
+                                            </li>
+                                            <li>
+                                                <a href="dash-payment-option.html">Đối tác - Khách hàng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="outer-footer__content m-b-40">
+                                    <div class="outer-footer__list-wrap">
+                                        <span class="outer-footer__content-title">Hỗ trợ</span>
+                                        <ul>
+                                            <li>
+                                                <a href="">Hỗ trợ</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Phản hồi</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Liên hệ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="outer-footer__content">
+                            <span class="outer-footer__content-title">Tham gia bản tin của chúng tôi</span>
+                            <form class="newsletter">
+
+                                <div class="newsletter__group">
+                                    <input class="input-text input-text--only-white" type="text" id="newsletter"
+                                        placeholder="Nhập email của bạn">
+                                    <button class="btn btn--e-brand newsletter__btn" type="submit">ĐĂNG KÝ</button>
+                                </div>
+
+                                <span class="newsletter__text">Đăng ký để nhận thông tin cập nhật về chương trình
+                                    khuyến
+                                    mãi, món mới, giảm giá và phiếu giảm giá.</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

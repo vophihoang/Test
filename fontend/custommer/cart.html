@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <title>Ludus - Electronics, Apparel, Computers, Books, DVDs & more</title>
+
+    <!--====== font-awesome ======-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--====== Google Font & css & bootstrap ======-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body class="config">
+
+    <!--====== Main App ======-->
+    <div id="app">
+
+        <!--====== Main Header ======-->
+        <header class="header--style-1 header--box-shadow">
+            <!--====== Nav 1 ======-->
+            <nav class="primary-nav primary-nav-wrapper--border">
+                <div class="container">
+                    <div class="primary-nav">
+                        <a class="main-logo" href="index.html">
+                            <img src="images/logo/logo-3.jpg" alt=""></a>
+
+                        <!--====== Search Form ======-->
+                        <form class="main-form">
+                            <input class="input-text input-text--border-radius input-text--style-1" type="text"
+                                id="main-search" placeholder="Tìm kiếm món ăn">
+                            <button class="btn btn--icon main-search-button" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                        <!--====== End - Search Form ======-->
+
+                        <div class="" id="navigation">
+                            <!--====== List ======-->
+                            <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                                <li class="has-dropdown" data-tooltip="tooltip" data-placement="left">
+                                    <a><i class="fa-regular fa-circle-user"></i></a>
+                                    <ul class="sub-menu" style="width:120px">
+                                        <li>
+                                            <a href="dash-profile.html"><i class="fa-solid fa-circle-user m-r-6"></i>
+                                                <span>Tài khoản</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="signup.html"><i class="fa-solid fa-user-plus m-r-6"></i>
+                                                <span>Đăng kí</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="signin.html"><i class="fa-solid fa-lock m-r-6"></i>
+                                                <span>Đăng nhập</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html"><i class="fa-solid fa-lock-open m-r-6"></i>
+                                                <span>Đăng xuất</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li data-tooltip="tooltip" data-placement="left">
+                                    <a href="tel:+0900901904"><i class="fa-solid fa-phone-volume"></i></a>
+                                </li>
+                                <li data-tooltip="tooltip" data-placement="left">
+                                    <a href="mailto:contact@domain.com"><i class="far fa-envelope"></i></a>
+                                </li>
+                            </ul>
+                            <!--====== End - List ======-->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--====== End - Nav 1 ======-->
+
+            <!--====== Nav 2 ======-->
+            <nav class="secondary-nav-wrapper">
+                <div class="container">
+                    <div class="secondary-nav">
+                        <div style="width: 92px; height: 67px;"></div>
+                        <div class="" id="navigation2">
+                            <!--====== Menu ======-->
+                            <ul class="ah-list ah-list--design2 ah-list--link-color-secondary ">
+                                <li>
+                                    <a href="filter.html">THỰC ĐƠN</a>
+                                </li>
+                                <li>
+                                    <a href="filter.html">MÓN ĂN KÈM</a>
+                                </li>
+                                <li>
+                                    <a href="filter.html">NƯỚC GIẢI KHÁT</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html">BÀI VIẾT</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">LIÊN LẠC</a>
+                                </li>
+                            </ul>
+
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <div class="" id="navigation3">
+                            <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                                <li>
+                                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                                </li>
+                                <li>
+                                    <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--====== End - Nav 2 ======-->
+        </header>
+        <!--====== End - Main Header ======-->
+
+
+        <!--====== App Content ======-->
+        <div class="app-content">
+
+            <!--====== Section 2 ======-->
+            <div class="u-s-p-b-60">
+
+                <!--====== Section Intro ======-->
+                <div class="section__intro u-s-m-b-60">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section__text-wrap">
+                                    <h1 class="section__heading u-c-secondary">GIỎ HÀNG</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== End - Section Intro ======-->
+
+
+                <!--====== Section Content ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 u-s-m-b-30">
+                                <div class="table-responsive">
+                                    <table class="table-p">
+                                        <tbody>
+
+                                            <!--====== Row ======-->
+                                            <tr>
+                                                <td>
+                                                    <div class="table-p__box">
+                                                        <div class="table-p__img-wrap">
+
+                                                            <img class="u-img-fluid"
+                                                                src="images/product/comsuon/suontrung.jpg" alt="">
+                                                        </div>
+                                                        <div class="table-p__info">
+
+                                                            <span class="table-p__name">
+
+                                                                <a href="product-detail.html">CƠM SƯỜN TRỨNG</a></span>
+
+                                                            <span class="table-p__category">
+
+                                                                <a href="shop-side-version-2.html">CƠM SƯỜN</a></span>
+                                                            <ul class="table-p__variant-list">
+                                                                <li>
+
+                                                                    <span>Cỡ : Lớn</span>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+
+                                                    <span class="table-p__price">35.000đ</span>
+                                                </td>
+                                                <td>
+                                                    <div class="table-p__input-counter-wrap">
+
+                                                        <!--====== Input Counter ======-->
+                                                        <div class="input-counter">
+
+                                                            <span class="input-counter__minus fas fa-minus"></span>
+
+                                                            <input
+                                                                class="input-counter__text input-counter--text-primary-style"
+                                                                type="text" value="1" data-min="1" data-max="1000">
+
+                                                            <span class="input-counter__plus fas fa-plus"></span>
+                                                        </div>
+                                                        <!--====== End - Input Counter ======-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-p__del-wrap">
+
+                                                        <a class="far fa-trash-alt table-p__delete-link" href="#"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--====== End - Row ======-->
+
+
+                                            <!--====== Row ======-->
+                                            <tr>
+                                                <td>
+                                                    <div class="table-p__box">
+                                                        <div class="table-p__img-wrap">
+
+                                                            <img class="u-img-fluid"
+                                                                src="images/product/comga/xoimo.jpg" alt="">
+                                                        </div>
+                                                        <div class="table-p__info">
+
+                                                            <span class="table-p__name">
+
+                                                                <a href="product-detail.html">CƠM GÀ XỐI MỠ</a></span>
+
+                                                            <span class="table-p__category">
+
+                                                                <a href="shop-side-version-2.html">CƠM GÀ</a></span>
+                                                            <ul class="table-p__variant-list">
+                                                                <li>
+
+                                                                    <span>Cỡ : Lớn</span>
+                                                                </li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+
+                                                    <span class="table-p__price">40.000đ</span>
+                                                </td>
+                                                <td>
+                                                    <div class="table-p__input-counter-wrap">
+
+                                                        <!--====== Input Counter ======-->
+                                                        <div class="input-counter">
+
+                                                            <span class="input-counter__minus fas fa-minus"></span>
+
+                                                            <input
+                                                                class="input-counter__text input-counter--text-primary-style"
+                                                                type="text" value="1" data-min="1" data-max="1000">
+
+                                                            <span class="input-counter__plus fas fa-plus"></span>
+                                                        </div>
+                                                        <!--====== End - Input Counter ======-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-p__del-wrap">
+
+                                                        <a class="far fa-trash-alt table-p__delete-link" href="#"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--====== End - Row ======-->
+
+
+                                            <!--====== Row ======-->
+                                            <tr>
+                                                <td>
+                                                    <div class="table-p__box">
+                                                        <div class="table-p__img-wrap">
+
+                                                            <img class="u-img-fluid"
+                                                                src="images/product/comga/chien.jpg" alt="">
+                                                        </div>
+                                                        <div class="table-p__info">
+
+                                                            <span class="table-p__name">
+
+                                                                <a href="product-detail.html">CƠM GÀ CHIÊN</a></span>
+
+                                                            <span class="table-p__category">
+
+                                                                <a href="shop-side-version-2.html">CƠM GÀ</a></span>
+                                                            <ul class="table-p__variant-list">
+                                                                <li>
+
+                                                                    <span>Cỡ : Nhở</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+
+                                                    <span class="table-p__price">20.000đ</span>
+                                                </td>
+                                                <td>
+                                                    <div class="table-p__input-counter-wrap">
+
+                                                        <!--====== Input Counter ======-->
+                                                        <div class="input-counter">
+
+                                                            <span class="input-counter__minus fas fa-minus"></span>
+
+                                                            <input
+                                                                class="input-counter__text input-counter--text-primary-style"
+                                                                type="text" value="1" data-min="1" data-max="1000">
+
+                                                            <span class="input-counter__plus fas fa-plus"></span>
+                                                        </div>
+                                                        <!--====== End - Input Counter ======-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-p__del-wrap">
+
+                                                        <a class="far fa-trash-alt table-p__delete-link" href="#"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--====== End - Row ======-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="route-box">
+                                    <div class="route-box__g1">
+
+                                        <a class="route-box__link" href="filter.html"><i
+                                                class="fas fa-long-arrow-alt-left"></i>
+
+                                            <span>TIẾP TỤC MUA SẮM</span></a>
+                                    </div>
+                                    <div class="route-box__g2">
+
+                                        <a class="route-box__link" href="cart.html"><i class="fas fa-trash"></i>
+
+                                            <span>DỌN SẠCH GIỎ HÀNG</span></a>
+
+                                        <a class="route-box__link" href="cart.html"><i class="fas fa-sync"></i>
+
+                                            <span>CẬP NHẬT GIỎ HÀNG</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== End - Section Content ======-->
+            </div>
+            <!--====== End - Section 2 ======-->
+
+
+            <!--====== Section 3 ======-->
+            <div class="u-s-p-b-60">
+
+                <!--====== Section Content ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 u-s-m-b-30">
+                                <form class="f-cart">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 u-s-m-b-30">
+                                            <div class="f-cart__pad-box">
+                                                <div class="u-s-m-b-30">
+                                                    <table class="f-cart__table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>PHÍ VẬN CHUYỂN</td>
+                                                                <td>10.000đ</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>THUẾ</td>
+                                                                <td>0đ</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>TỔNG PHỤ THU</td>
+                                                                <td>105.000đ</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>TỔNG CỘNG</td>
+                                                                <td>105.000đ</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+
+                                                    <button class="btn btn--e-brand-b-2" type="submit"> TIẾN HÀNH THANH TOÁN</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== End - Section Content ======-->
+            </div>
+            <!--====== End - Section 3 ======-->
+        </div>
+        <!--====== End - App Content ======-->
+
+
+        <!--====== Main Footer ======-->
+        <footer>
+            <div class="outer-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="outer-footer__content m-b-40">
+                                <span class="outer-footer__content-title">Liên hệ</span>
+                                <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
+                                    <span>261/17 Chu Văn An, Phường 12, Quận Bình Thạnh</span>
+                                </div>
+                                <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
+                                    <span>(+0) 900 901 904</span>
+                                </div>
+                                <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
+                                    <span>commenau@domain.com</span>
+                                </div>
+                                <div class="outer-footer__social">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="outer-footer__content m-b-40">
+                                        <span class="outer-footer__content-title">Về chúng tôi</span>
+                                        <div class="outer-footer__list-wrap">
+                                            <ul>
+                                                <li>
+                                                    <a href="cart.html">Giới thiệu chung</a>
+                                                </li>
+                                                <li>
+                                                    <a href="dashboard.html">Tầm nhìn - Sứ mệnh</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop-side-version-2.html">Tuyển dụng</a>
+                                                </li>
+                                                <li>
+                                                    <a href="dash-payment-option.html">Đối tác - Khách hàng</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="outer-footer__content m-b-40">
+                                        <div class="outer-footer__list-wrap">
+                                            <span class="outer-footer__content-title">Hỗ trợ</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="">Hỗ trợ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Phản hồi</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Liên hệ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="outer-footer__content">
+                                <span class="outer-footer__content-title">Tham gia bản tin của chúng tôi</span>
+                                <form class="newsletter">
+
+                                    <div class="newsletter__group">
+                                        <input class="input-text input-text--only-white" type="text" id="newsletter"
+                                            placeholder="Nhập email của bạn">
+                                        <button class="btn btn--e-brand newsletter__btn" type="submit">ĐĂNG KÝ</button>
+                                    </div>
+
+                                    <span class="newsletter__text">Đăng ký để nhận thông tin cập nhật về chương trình
+                                        khuyến
+                                        mãi, món mới, giảm giá và phiếu giảm giá.</span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--====== End - Main App ======-->
+
+</body>
+
+</html>

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Trang chủ</title>
+    <!--====== font-awesome ======-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--====== Google Font ======-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet"> -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!--====== Main Header ======-->
+    <header class="header--style-1 header--box-shadow">
+        <!--====== Nav 1 ======-->
+        <nav class="primary-nav primary-nav-wrapper--border">
+            <div class="container">
+                <div class="primary-nav">
+                    <a class="main-logo" href="index.html">
+                        <img src="images/logo/logo-3.jpg" alt=""></a>
+
+                    <!--====== Search Form ======-->
+                    <form class="main-form">
+                        <input class="input-text input-text--border-radius input-text--style-1" type="text"
+                            id="main-search" placeholder="Tìm kiếm món ăn">
+                        <button class="btn btn--icon main-search-button" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <!--====== End - Search Form ======-->
+
+                    <div class="" id="navigation">
+                        <!--====== List ======-->
+                        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                            <li class="has-dropdown" data-tooltip="tooltip" data-placement="left">
+                                <a><i class="fa-regular fa-circle-user"></i></a>
+                                <ul class="sub-menu" style="width:120px">
+                                    <li>
+                                        <a href="dash-profile.html"><i class="fa-solid fa-circle-user m-r-6"></i>
+                                            <span>Tài khoản</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="signup.html"><i class="fa-solid fa-user-plus m-r-6"></i>
+                                            <span>Đăng kí</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="signin.html"><i class="fa-solid fa-lock m-r-6"></i>
+                                            <span>Đăng nhập</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html"><i class="fa-solid fa-lock-open m-r-6"></i>
+                                            <span>Đăng xuất</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li data-tooltip="tooltip" data-placement="left">
+                                <a href="tel:+0900901904"><i class="fa-solid fa-phone-volume"></i></a>
+                            </li>
+                            <li data-tooltip="tooltip" data-placement="left">
+                                <a href="mailto:contact@domain.com"><i class="far fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                        <!--====== End - List ======-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--====== End - Nav 1 ======-->
+
+        <!--====== Nav 2 ======-->
+        <nav class="secondary-nav-wrapper">
+            <div class="container">
+                <div class="secondary-nav">
+                    <div style="width: 92px; height: 67px;"></div>
+                    <div class="" id="navigation2">
+                        <!--====== Menu ======-->
+                        <ul class="ah-list ah-list--design2 ah-list--link-color-secondary ">
+                            <li>
+                                <a href="filter.html">THỰC ĐƠN</a>
+                            </li>
+                            <li>
+                                <a href="filter.html">MÓN ĂN KÈM</a>
+                            </li>
+                            <li>
+                                <a href="filter.html">NƯỚC GIẢI KHÁT</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">BÀI VIẾT</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">LIÊN LẠC</a>
+                            </li>
+                        </ul>
+
+                        <!--====== End - Menu ======-->
+                    </div>
+                    <div class="" id="navigation3">
+                        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                            <li>
+                                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                            </li>
+                            <li>
+                                <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--====== End - Nav 2 ======-->
+    </header>
+    <!--====== End - Main Header ======-->
+    <!--========= Main  Content  ==========-->
+    <content class="container-content">
+
+        <!--========= Section Product Image Introduce  ==========-->
+        <div id="product-introduce" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators" style="position: absolute !important;">
+                <button type="button" data-bs-target="#product-introduce" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#product-introduce" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#product-introduce" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item product-introduce-item active">
+                    <img src="images/slider/kimchi-fried-rice-241051_1280.jpg" alt="Los Angeles" class="d-block w-100">
+                </div>
+                <div class="carousel-item product-introduce-item">
+                    <img src="images/slider/sauerbraten-2512441_1280.jpg" alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item product-introduce-item">
+                    <img src="images/slider/menu-2509046_1280.jpg" alt="New York" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#product-introduce"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#product-introduce"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <!--========= End Product Image Introduce  ==========-->
+
+        <!--====== Content Section 1 ======-->
+        <div class="section__content">
+
+            <!--====== Section Intro NEW MENU ======-->
+            <div class="section__intro u-s-m-b-46">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section__text-wrap">
+                                <h1 class="section__heading u-c-secondary u-s-m-b-12">MÓN ĂN MỚI</h1>
+
+                                <span class="section__span text-silver">HẤP DẪN TỚI MIẾNG CUỐI CÙNG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====== End -Section Intro NEW MENU======-->
+
+
+            <!--====== Section NEW MENU ======-->
+            <div class="section__content container-content">
+                <div class="list-product">
+                    <div class="container-product ">
+                        <div class="product-o product-o--hover-on">
+                            <div class="product-o__wrap">
+                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                    <img class="aspect__img" src="images/slider/cevapcici-719159_1280.jpg" alt=""></a>
+                                <div class="product-o__action-wrap">
+                                    <ul class="product-o__action-list">
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                                data-placement="top" title="Quick View"><i
+                                                    class="fas fa-search-plus"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                                data-placement="top" title="Add to Cart"><i
+                                                    class="fas fa-plus-circle"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <span class="product-o__category">
+
+                                <a href="shop-side-version-2.html">Cơm</a></span>
+
+                            <span class="product-o__name">
+
+                                <a href="product-detail.html">Cơm Kim Chi Sốt Gà Sa Tế</a></span>
+                            <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i>
+
+                                <span class="product-o__review">(0)</span>
+                            </div>
+
+                            <span class="product-o__price">25.000 VNĐ
+
+                                <span class="product-o__discount">30.000 VNĐ</span></span>
+                        </div>
+                    </div>
+                    <div class="container-product ">
+                        <div class="product-o product-o--hover-on">
+                            <div class="product-o__wrap">
+                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                    <img class="aspect__img" src="images/slider/food-1167397_1280.jpg" alt=""></a>
+                                <div class="product-o__action-wrap">
+                                    <ul class="product-o__action-list">
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                                data-placement="top" title="Quick View"><i
+                                                    class="fas fa-search-plus"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                                data-placement="top" title="Add to Cart"><i
+                                                    class="fas fa-plus-circle"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <!-- <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Email me When the price drops"><i
+                                                    class="fas fa-envelope"></i></a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <span class="product-o__category">
+
+                                <a href="shop-side-version-2.html">Cơm</a></span>
+
+                            <span class="product-o__name">
+
+                                <a href="product-detail.html">Cơm Kim Chi Sốt Gà Sa Tế</a></span>
+                            <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i>
+
+                                <span class="product-o__review">(0)</span>
+                            </div>
+
+                            <span class="product-o__price">25.000 VNĐ
+
+                                <span class="product-o__discount">30.000 VNĐ</span></span>
+                        </div>
+                    </div>
+                    <div class="container-product ">
+                        <div class="product-o product-o--hover-on">
+                            <div class="product-o__wrap">
+                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                    <img class="aspect__img" src="images/slider/food-1485024_1280.jpg" alt=""></a>
+                                <div class="product-o__action-wrap">
+                                    <ul class="product-o__action-list">
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                                data-placement="top" title="Quick View"><i
+                                                    class="fas fa-search-plus"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                                data-placement="top" title="Add to Cart"><i
+                                                    class="fas fa-plus-circle"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <!-- <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Email me When the price drops"><i
+                                                    class="fas fa-envelope"></i></a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <span class="product-o__category">
+
+                                <a href="shop-side-version-2.html">Cơm</a></span>
+
+                            <span class="product-o__name">
+
+                                <a href="product-detail.html">Cơm Kim Chi Sốt Gà Sa Tế</a></span>
+                            <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i>
+
+                                <span class="product-o__review">(0)</span>
+                            </div>
+
+                            <span class="product-o__price">25.000 VNĐ
+
+                                <span class="product-o__discount">30.000 VNĐ</span></span>
+                        </div>
+                    </div>
+                    <div class="container-product ">
+                        <div class="product-o product-o--hover-on">
+                            <div class="product-o__wrap">
+                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                    <img class="aspect__img" src="images/slider/kimchi-fried-rice-241051_1280.jpg" alt=""></a>
+                                <div class="product-o__action-wrap">
+                                    <ul class="product-o__action-list">
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                                data-placement="top" title="Quick View"><i
+                                                    class="fas fa-search-plus"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                                data-placement="top" title="Add to Cart"><i
+                                                    class="fas fa-plus-circle"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <!-- <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Email me When the price drops"><i
+                                                    class="fas fa-envelope"></i></a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <span class="product-o__category">
+
+                                <a href="shop-side-version-2.html">Cơm</a></span>
+
+                            <span class="product-o__name">
+
+                                <a href="product-detail.html">Cơm Kim Chi Sốt Gà Sa Tế</a></span>
+                            <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i>
+
+                                <span class="product-o__review">(0)</span>
+                            </div>
+
+                            <span class="product-o__price">25.000 VNĐ
+
+                                <span class="product-o__discount">30.000 VNĐ</span></span>
+                        </div>
+                    </div>
+                    <div class="container-product ">
+                        <div class="product-o product-o--hover-on">
+                            <div class="product-o__wrap">
+                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                    <img class="aspect__img" src="images/slider/meal-932985_1280.jpg" alt=""></a>
+                                <div class="product-o__action-wrap">
+                                    <ul class="product-o__action-list">
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                                data-placement="top" title="Quick View"><i
+                                                    class="fas fa-search-plus"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                                data-placement="top" title="Add to Cart"><i
+                                                    class="fas fa-plus-circle"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <!-- <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Email me When the price drops"><i
+                                                    class="fas fa-envelope"></i></a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <span class="product-o__category">
+
+                                <a href="shop-side-version-2.html">Cơm</a></span>
+
+                            <span class="product-o__name">
+
+                                <a href="product-detail.html">Cơm Kim Chi Sốt Gà Sa Tế</a></span>
+                            <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i>
+
+                                <span class="product-o__review">(0)</span>
+                            </div>
+
+                            <span class="product-o__price">25.000 VNĐ
+
+                                <span class="product-o__discount">30.000 VNĐ</span></span>
+                        </div>
+                    </div>
+                    <div class="container-product ">
+                        <div class="product-o product-o--hover-on">
+                            <div class="product-o__wrap">
+                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                    <img class="aspect__img" src="images/slider/menu-2509046_1280.jpg" alt=""></a>
+                                <div class="product-o__action-wrap">
+                                    <ul class="product-o__action-list">
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                                data-placement="top" title="Quick View"><i
+                                                    class="fas fa-search-plus"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                                data-placement="top" title="Add to Cart"><i
+                                                    class="fas fa-plus-circle"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <!-- <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Email me When the price drops"><i
+                                                    class="fas fa-envelope"></i></a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <span class="product-o__category">
+
+                                <a href="shop-side-version-2.html">Cơm</a></span>
+
+                            <span class="product-o__name">
+
+                                <a href="product-detail.html">Cơm Kim Chi Sốt Gà Sa Tế</a></span>
+                            <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i>
+
+                                <span class="product-o__review">(0)</span>
+                            </div>
+
+                            <span class="product-o__price">25.000 VNĐ
+
+                                <span class="product-o__discount">30.000 VNĐ</span></span>
+                        </div>
+                    </div>
+                    <div class="container-product ">
+                        <div class="product-o product-o--hover-on">
+                            <div class="product-o__wrap">
+                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                    <img class="aspect__img" src="images/slider/salad-1206018_1280.jpg" alt=""></a>
+                                <div class="product-o__action-wrap">
+                                    <ul class="product-o__action-list">
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                                data-placement="top" title="Quick View"><i
+                                                    class="fas fa-search-plus"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                                data-placement="top" title="Add to Cart"><i
+                                                    class="fas fa-plus-circle"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <!-- <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Email me When the price drops"><i
+                                                    class="fas fa-envelope"></i></a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <span class="product-o__category">
+
+                                <a href="shop-side-version-2.html">Cơm</a></span>
+
+                            <span class="product-o__name">
+
+                                <a href="product-detail.html">Cơm Kim Chi Sốt Gà Sa Tế</a></span>
+                            <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i>
+
+                                <span class="product-o__review">(0)</span>
+                            </div>
+
+                            <span class="product-o__price">25.000 VNĐ
+
+                                <span class="product-o__discount">30.000 VNĐ</span></span>
+                        </div>
+                    </div>
+                    <div class="container-product ">
+                        <div class="product-o product-o--hover-on">
+                            <div class="product-o__wrap">
+                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                    <img class="aspect__img" src="images/slider/sauerbraten-2512441_1280.jpg" alt=""></a>
+                                <div class="product-o__action-wrap">
+                                    <ul class="product-o__action-list">
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                                data-placement="top" title="Quick View"><i
+                                                    class="fas fa-search-plus"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                                data-placement="top" title="Add to Cart"><i
+                                                    class="fas fa-plus-circle"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <!-- <li>
+
+                                            <a href="signin.html" data-tooltip="tooltip" data-placement="top"
+                                                title="Email me When the price drops"><i
+                                                    class="fas fa-envelope"></i></a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <span class="product-o__category">
+
+                                <a href="shop-side-version-2.html">Cơm</a></span>
+
+                            <span class="product-o__name">
+
+                                <a href="product-detail.html">Cơm Kim Chi Sốt Gà Sa Tế</a></span>
+                            <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i>
+
+                                <span class="product-o__review">(0)</span>
+                            </div>
+
+                            <span class="product-o__price">25.000 VNĐ
+
+                                <span class="product-o__discount">30.000 VNĐ</span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--=========  Feed-Back Section   ========-->
+            <div class="u-s-p-b-90 u-s-m-b-30">
+
+                <!--====== Section Intro ======-->
+                <div class="section__intro u-s-m-b-46">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section__text-wrap">
+                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">PHẢN HỒI TỪ KHÁCH</h1>
+
+                                    <span class="section__span text-silver">WHAT OUR CLIENTS SAY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== End - Section Intro ======-->
+
+
+                <!--====== Section Content ======-->
+                <div class="section__content">
+                    <div class="container">
+
+                        <!--====== Testimonial Slider ======-->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active ">
+                                    <div class="d-flex flex-column align-items-center justify-content-center">
+                                        <div class="testimonial__img-wrap">
+
+                                            <img class="testimonial__img" src="images/promo/user-310807_1280.webp" alt="">
+                                        </div>
+                                        <div
+                                            class="testimonial__content-wrap d-flex flex-column align-items-center justify-content-center">
+
+                                            <span class="testimonial__double-quote"><i
+                                                    class="fas fa-quote-right"></i></span>
+                                            <blockquote class="testimonial__block-quote">
+                                                <p>" Món cơm cà ri thật sự ngon và thơm ngon. Hương vị cay từ gia vị cà ri kết hợp hoàn hảo với vị đậm đà từ thịt gà và sự ngon ngọt của cà tím và khoai tây."</p>
+                                            </blockquote>
+
+                                            <span class="testimonial__author">Nguyễn Văn A</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item  ">
+                                    <div class="d-flex flex-column align-items-center justify-content-center">
+                                        <div class="testimonial__img-wrap">
+
+                                            <img class="testimonial__img" src="images/promo/avatar-3637561_1280.png" alt="">
+                                        </div>
+                                        <div
+                                            class="testimonial__content-wrap d-flex flex-column align-items-center justify-content-center">
+
+                                            <span class="testimonial__double-quote"><i
+                                                    class="fas fa-quote-right"></i></span>
+                                            <blockquote class="testimonial__block-quote">
+                                                <p>" Món cơm cà ri thật sự ngon và thơm ngon. Hương vị cay từ gia vị cà ri kết hợp hoàn hảo với vị đậm đà từ thịt gà và sự ngon ngọt của cà tím và khoai tây."</p>
+                                            </blockquote>
+
+                                            <span class="testimonial__author">Nguyễn Văn A</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item  ">
+                                    <div class="d-flex flex-column align-items-center justify-content-center">
+                                        <div class="testimonial__img-wrap">
+
+                                            <img class="testimonial__img" src="images/promo/avatar-3637561_1280.png" alt="">
+                                        </div>
+                                        <div
+                                            class="testimonial__content-wrap d-flex flex-column align-items-center justify-content-center">
+
+                                            <span class="testimonial__double-quote"><i
+                                                    class="fas fa-quote-right"></i></span>
+                                            <blockquote class="testimonial__block-quote">
+                                                <p>" Món cơm cà ri thật sự ngon và thơm ngon. Hương vị cay từ gia vị cà ri kết hợp hoàn hảo với vị đậm đà từ thịt gà và sự ngon ngọt của cà tím và khoai tây."</p>
+                                            </blockquote>
+
+                                            <span class="testimonial__author">Nguyễn Văn A</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item  ">
+                                    <div class="d-flex flex-column align-items-center justify-content-center">
+                                        <div class="testimonial__img-wrap">
+
+                                            <img class="testimonial__img" src="images/promo/user-310807_1280.webp" alt="">
+                                        </div>
+                                        <div
+                                            class="testimonial__content-wrap d-flex flex-column align-items-center justify-content-center">
+
+                                            <span class="testimonial__double-quote"><i
+                                                    class="fas fa-quote-right"></i></span>
+                                            <blockquote class="testimonial__block-quote">
+                                                <p>" Món cơm cà ri thật sự ngon và thơm ngon. Hương vị cay từ gia vị cà ri kết hợp hoàn hảo với vị đậm đà từ thịt gà và sự ngon ngọt của cà tím và khoai tây."</p>
+                                            </blockquote>
+
+                                            <span class="testimonial__author">Nguyễn Văn A</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators ">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div style="height: 50px;"></div>
+
+                        <!--====== End - Testimonial Slider ======-->
+                    </div>
+                </div>
+                <!--====== End - Section Content ======-->
+            </div>
+            <!--========   End Feed-Back Section        ===========-->
+            <!--====== End - Section NEW MENU ======-->
+        </div>
+        <!--====== End - Content Section ======-->
+
+    </content>
+    <!--========= End - Main Content  ================-->
+    <!--====== Main Footer ======-->
+    <footer>
+        <div class="outer-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="outer-footer__content m-b-40">
+                            <span class="outer-footer__content-title">Liên hệ</span>
+                            <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
+                                <span>261/17 Chu Văn An, Phường 12, Quận Bình Thạnh</span>
+                            </div>
+                            <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
+                                <span>(+0) 900 901 904</span>
+                            </div>
+                            <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
+                                <span>commenau@domain.com</span>
+                            </div>
+                            <div class="outer-footer__social">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="outer-footer__content m-b-40">
+                                    <span class="outer-footer__content-title">Về chúng tôi</span>
+                                    <div class="outer-footer__list-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="cart.html">Giới thiệu chung</a>
+                                            </li>
+                                            <li>
+                                                <a href="dashboard.html">Tầm nhìn - Sứ mệnh</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-side-version-2.html">Tuyển dụng</a>
+                                            </li>
+                                            <li>
+                                                <a href="dash-payment-option.html">Đối tác - Khách hàng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="outer-footer__content m-b-40">
+                                    <div class="outer-footer__list-wrap">
+                                        <span class="outer-footer__content-title">Hỗ trợ</span>
+                                        <ul>
+                                            <li>
+                                                <a href="">Hỗ trợ</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Phản hồi</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Liên hệ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="outer-footer__content">
+                            <span class="outer-footer__content-title">Tham gia bản tin của chúng tôi</span>
+                            <form class="newsletter">
+
+                                <div class="newsletter__group">
+                                    <input class="input-text input-text--only-white" type="text" id="newsletter"
+                                        placeholder="Nhập email của bạn">
+                                    <button class="btn btn--e-brand newsletter__btn" type="submit">ĐĂNG KÝ</button>
+                                </div>
+
+                                <span class="newsletter__text">Đăng ký để nhận thông tin cập nhật về chương trình
+                                    khuyến
+                                    mãi, món mới, giảm giá và phiếu giảm giá.</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

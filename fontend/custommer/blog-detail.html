@@ -1,0 +1,444 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--====== Google Font ======-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet"> -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/blog-detail.css">
+    <link rel="stylesheet" href="css/input.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <!--====== Main Header ======-->
+    <header class="header--style-1 header--box-shadow">
+        <!--====== Nav 1 ======-->
+        <nav class="primary-nav primary-nav-wrapper--border">
+            <div class="container">
+                <div class="primary-nav">
+                    <a class="main-logo" href="index.html">
+                        <img src="images/logo/logo-3.jpg" alt=""></a>
+
+                    <!--====== Search Form ======-->
+                    <form class="main-form">
+                        <input class="input-text input-text--border-radius input-text--style-1" type="text"
+                            id="main-search" placeholder="Tìm kiếm món ăn">
+                        <button class="btn btn--icon main-search-button" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <!--====== End - Search Form ======-->
+
+                    <div class="" id="navigation">
+                        <!--====== List ======-->
+                        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                            <li class="has-dropdown" data-tooltip="tooltip" data-placement="left">
+                                <a><i class="fa-regular fa-circle-user"></i></a>
+                                <ul class="sub-menu" style="width:120px">
+                                    <li>
+                                        <a href="dash-profile.html"><i class="fa-solid fa-circle-user m-r-6"></i>
+                                            <span>Tài khoản</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="signup.html"><i class="fa-solid fa-user-plus m-r-6"></i>
+                                            <span>Đăng kí</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="signin.html"><i class="fa-solid fa-lock m-r-6"></i>
+                                            <span>Đăng nhập</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html"><i class="fa-solid fa-lock-open m-r-6"></i>
+                                            <span>Đăng xuất</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li data-tooltip="tooltip" data-placement="left">
+                                <a href="tel:+0900901904"><i class="fa-solid fa-phone-volume"></i></a>
+                            </li>
+                            <li data-tooltip="tooltip" data-placement="left">
+                                <a href="mailto:contact@domain.com"><i class="far fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                        <!--====== End - List ======-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--====== End - Nav 1 ======-->
+
+        <!--====== Nav 2 ======-->
+        <nav class="secondary-nav-wrapper">
+            <div class="container">
+                <div class="secondary-nav">
+                    <div style="width: 92px; height: 67px;"></div>
+                    <div class="" id="navigation2">
+                        <!--====== Menu ======-->
+                        <ul class="ah-list ah-list--design2 ah-list--link-color-secondary ">
+                            <li>
+                                <a href="filter.html">THỰC ĐƠN</a>
+                            </li>
+                            <li>
+                                <a href="filter.html">MÓN ĂN KÈM</a>
+                            </li>
+                            <li>
+                                <a href="filter.html">NƯỚC GIẢI KHÁT</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">BÀI VIẾT</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">LIÊN LẠC</a>
+                            </li>
+                        </ul>
+
+                        <!--====== End - Menu ======-->
+                    </div>
+                    <div class="" id="navigation3">
+                        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                            <li>
+                                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                            </li>
+                            <li>
+                                <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--====== End - Nav 2 ======-->
+    </header>
+    <!--====== End - Main Header ======-->
+    <div class="container-content">
+
+        <!--====== Section 1 ======-->
+        <div class="u-s-p-y-90">
+
+            <!--====== Detail Post ======-->
+            <div class="detail-post">
+                <div class="bp-detail">
+                    <div>
+                        <!--====== Image Code ======-->
+                        <img class="bp-detail-image" src="images/slider/meal-932985_1280.jpg" alt="">
+                        <!--====== End - Image Code ======-->
+                    </div>
+                    <div class="bp-detail__info-wrap">
+                        <div class="bp-detail__stat">
+                            <span class="bp-detail__stat-wrap">
+
+                                <span class="bp-detail__publish-date">
+
+                                    <a href="blog-right-sidebar.html">
+
+                                        <span>25 tháng 3 năm 2018</span></a>
+                                </span>
+                            </span>
+
+                            <span class="bp-detail__stat-wrap">
+
+                                <span class="bp-detail__author">
+                                    <a class="text-silver" href="blog-right-sidebar.html">Dayle</a>
+                                </span>
+                            </span>
+
+                        </div>
+
+                        <span class="bp-detail__h1">
+
+                            <a href="blog-detail.html">Cơm Đậu Hủ Bông Cải Xanh</a></span>
+
+                        <p class="bp-detail__p">Món ăn không chỉ đơn thuần là nhu cầu cơ bản mà còn là một cách để tạo
+                            sự kết nối, cùng nhau chia sẻ và thể hiện tình yêu. Một món ăn gia đình ưa thích của chúng
+                            tôi là "Cơm Đậu Hủ và Bông Cải," một sự kết hợp tuyệt vời giữa đậu hủ mềm mịn và bông cải
+                            ngon miệng. Trong bài viết này, chúng ta sẽ tìm hiểu về món ăn này, từ công thức đến lý do
+                            tại sao nó là một phần không thể thiếu trong bữa ăn gia đình của chúng tôi.
+
+                            <a href="#">printer </a>Món cơm đậu hủ và bông cải là một món ăn thú vị, giàu dinh dưỡng và
+                            đậm đà hương vị. Nó là một ví dụ tuyệt vời về sự sáng tạo trong bếp. Chúng tôi thường chọn
+                            món này khi muốn có bữa ăn nhanh chóng, nhưng không muốn hy sinh về chất lượng hoặc dinh
+                            dưỡng.
+                        </p>
+                        <p class="bp-detail__p">Món cơm đậu hủ và bông cải không chỉ ngon mà còn rất lành mạnh. Đậu hủ
+                            là một nguồn cung cấp protein thực vật tốt cho sức khỏe, cung cấp các loại axit béo thiết
+                            yếu cho cơ thể. Bông cải, chứa nhiều vitamin và khoáng chất, giúp tăng cường sức đề kháng và
+                            bảo vệ sức khỏe tim mạch.</p>
+
+                        <p class="bp-detail__p">Món cơm đậu hủ và bông cải là một ví dụ tuyệt vời về cách sáng tạo trong
+                            bếp có thể tạo ra một bữa ăn ngon miệng và dinh dưỡng. Nó kết hợp hương vị đậm đà với lợi
+                            ích cho sức khỏe, là một lựa chọn tốt cho cả gia đình. Hãy thử nấu món này trong bữa tối gia
+                            đình của bạn và tận hưởng hương vị sáng tạo và hữu ích.
+
+                            Còn bạn, bạn đã từng thử món cơm đậu hủ và bông cải chưa? Hãy chia sẻ với chúng tôi về trải
+                            nghiệm của bạn!</p>
+
+                        <div class="d-flex align-items-center justify-content-between  bp-detail__postnp">
+                            <div>
+
+                                <a href="blog-detail.html">Bài đăng trước</a>
+                            </div>
+                            <div>
+
+                                <a href="blog-detail.html">Bài đăng tiếp theo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Detail Post ======-->
+        <div class="u-s-p-b-60">
+
+            <div class="d-meta__comment-arena">
+
+                <span class="d-meta__text u-s-m-b-36">6 bình luận trong "Cơm Đậu Hủ cùng với bông cải xanh"</span>
+                <div class="d-meta__comments u-s-m-b-30">
+                    <ol>
+                        <li>
+
+                            <!--====== Comment ======-->
+                            <div class="d-meta__p-comment">
+                                <div class="p-comment__wrap1">
+                                    <div class="aspect aspect--square p-comment__img-wrap">
+
+                                        <img src="images/blog/avatar.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="p-comment__wrap2">
+
+                                    <span class="p-comment__author">Dayle</span>
+
+                                    <span class="p-comment__timestamp">
+
+                                        <a href="#">
+
+                                            <span>25 March 2015 at 3:55pm</span></a></span>
+                                    <p class="p-comment__paragraph">Món này là một món ăn ngon và đa dạng với hương vị độc đáo, và nó thường là lựa chọn phổ biến cho những người yêu thích ẩm thực thế giới và gia vị.</p>
+
+
+                                </div>
+                            </div>
+                            <div class="d-meta__p-comment">
+                                <div class="p-comment__wrap1">
+                                    <div class="aspect aspect--square p-comment__img-wrap">
+
+                                        <img src="images/blog/avatar.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="p-comment__wrap2">
+
+                                    <span class="p-comment__author">Dayle</span>
+
+                                    <span class="p-comment__timestamp">
+
+                                        <a href="#">
+
+                                            <span>25 March 2015 at 3:55pm</span></a></span>
+                                    <p class="p-comment__paragraph">Món này là một món ăn ngon và đa dạng với hương vị độc đáo, và nó thường là lựa chọn phổ biến cho những người yêu thích ẩm thực thế giới và gia vị.</p>
+
+
+                                </div>
+                            </div>
+                            <div class="d-meta__p-comment">
+                                <div class="p-comment__wrap1">
+                                    <div class="aspect aspect--square p-comment__img-wrap">
+
+                                        <img src="images/blog/avatar.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="p-comment__wrap2">
+
+                                    <span class="p-comment__author">Dayle</span>
+
+                                    <span class="p-comment__timestamp">
+
+                                        <a href="#">
+
+                                            <span>25 March 2015 at 3:55pm</span></a></span>
+                                    <p class="p-comment__paragraph">Món này là một món ăn ngon và đa dạng với hương vị độc đáo, và nó thường là lựa chọn phổ biến cho những người yêu thích ẩm thực thế giới và gia vị.</p>
+
+
+                                </div>
+                            </div>
+                            <div class="d-meta__p-comment">
+                                <div class="p-comment__wrap1">
+                                    <div class="aspect aspect--square p-comment__img-wrap">
+
+                                        <img src="images/blog/avatar.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="p-comment__wrap2">
+
+                                    <span class="p-comment__author">Dayle</span>
+
+                                    <span class="p-comment__timestamp">
+
+                                        <a href="#">
+
+                                            <span>25 March 2015 at 3:55pm</span></a></span>
+                                    <p class="p-comment__paragraph">Món này là một món ăn ngon và đa dạng với hương vị độc đáo, và nó thường là lựa chọn phổ biến cho những người yêu thích ẩm thực thế giới và gia vị.</p>
+
+
+                                </div>
+                            </div>
+                            <!--====== End - Comment ======-->
+
+                        </li>
+                    </ol>
+                </div>
+
+                <span class="d-meta__text-2 u-s-m-b-6">Tham gia vào cuộc trò chuyện</span>
+
+                <span class="d-meta__text-3 u-s-m-b-16">Tài khoản email của bạn sẽ không được được công bố trong bình
+                    luận.
+                    Trường yêu cầu sẽ đánh dấu *</span>
+                <form class="respond__form">
+                    <div class="respond__group d-flex flex-row">
+                        <div class="u-s-m-b-15 col-6 me-3">
+
+                            <label class="gl-label" for="comment">Bình Luận *</label><textarea
+                                class="text-area text-area--primary-style" id="comment"></textarea>
+                        </div>
+                        <div class="col-6">
+                            <p class="u-s-m-b-30">
+
+                                <label class="gl-label" for="responder-name">Tên *</label>
+
+                                <input class="input-text input-text--primary-style" type="text" id="responder-name">
+                            </p>
+                            <p class="u-s-m-b-30">
+
+                                <label class="gl-label" for="responder-email">Email *</label>
+
+                                <input class="input-text input-text--primary-style" type="text" id="responder-email">
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+
+                        <button class="btn btn--e-brand-shadow" type="submit">Đăng Bình Luận</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!--====== End - Section 1 ======-->
+    </div>
+    <footer>
+        <div class="outer-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="outer-footer__content m-b-40">
+                            <span class="outer-footer__content-title">Liên hệ</span>
+                            <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
+                                <span>261/17 Chu Văn An, Phường 12, Quận Bình Thạnh</span>
+                            </div>
+                            <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
+                                <span>(+0) 900 901 904</span>
+                            </div>
+                            <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
+                                <span>commenau@domain.com</span>
+                            </div>
+                            <div class="outer-footer__social">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="outer-footer__content m-b-40">
+                                    <span class="outer-footer__content-title">Về chúng tôi</span>
+                                    <div class="outer-footer__list-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="cart.html">Giới thiệu chung</a>
+                                            </li>
+                                            <li>
+                                                <a href="dashboard.html">Tầm nhìn - Sứ mệnh</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-side-version-2.html">Tuyển dụng</a>
+                                            </li>
+                                            <li>
+                                                <a href="dash-payment-option.html">Đối tác - Khách hàng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="outer-footer__content m-b-40">
+                                    <div class="outer-footer__list-wrap">
+                                        <span class="outer-footer__content-title">Hỗ trợ</span>
+                                        <ul>
+                                            <li>
+                                                <a href="">Hỗ trợ</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Phản hồi</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Liên hệ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="outer-footer__content">
+                            <span class="outer-footer__content-title">Tham gia bản tin của chúng tôi</span>
+                            <form class="newsletter">
+
+                                <div class="newsletter__group">
+                                    <input class="input-text input-text--only-white" type="text" id="newsletter"
+                                        placeholder="Nhập email của bạn">
+                                    <button class="btn btn--e-brand newsletter__btn" type="submit">ĐĂNG KÝ</button>
+                                </div>
+
+                                <span class="newsletter__text">Đăng ký để nhận thông tin cập nhật về chương trình
+                                    khuyến
+                                    mãi, món mới, giảm giá và phiếu giảm giá.</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
