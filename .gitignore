@@ -1,5 +1,7 @@
 target/
 abc/
+.idea/
+data.dat
 # Eclipse m2e generated files
 # Eclipse Core
 .project
@@ -18,3 +20,4 @@ abc/
 *.zip
 *.tar.gz
 *.rar
+*.iml
