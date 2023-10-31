@@ -1,5 +1,6 @@
 target/
 abc/
+data.dat
 # Eclipse m2e generated files
 # Eclipse Core
 .project
